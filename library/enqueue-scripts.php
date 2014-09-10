@@ -43,7 +43,7 @@ endif;
 if (!function_exists('dev_scripts')&&STAGE=="DEVELOPMENT") :
   function _scripts() {
     wp_register_script( 'dev-helpers', get_template_directory_uri() . '/js/dev-helpers.js', array('jquery'), '1.0.0', false );
-    
+
     wp_enqueue_script('dev-helpers');
   }
 
